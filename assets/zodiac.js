@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   const helpScreen = document.getElementById("help");
   
-  const helpButton = document.getElementById("help-button");
+  const helpButton = document.getElementById("myBtn");
 
 
   function displayZodiac() {
