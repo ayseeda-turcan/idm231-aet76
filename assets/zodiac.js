@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "Batgirl (Barbara Gordon)",
       dates: "December 22 - January 19", 
       description: "Intelligent, disciplined, and strategic. Capricorns are natural planners and hard workers, much like Barbara, who is both an exceptional detective and a highly skilled fighter. She embodies persistence and responsibility, especially in her role as Oracle.", 
-      sound: "capricorn.mp3", 
+      sound: "assets/audio/audio1.mp3", 
       image: "assets/images/batgirl.png" 
     },
     
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "Zatanna Zatara",
       dates: "January 20 - February 18", 
       description: "Independent, innovative, and deeply connected to knowledge. Aquarians are known for their uniqueness and ability to think outside the box. Zatanna’s magical abilities and her unconventional approach to solving problems make her a perfect fit for this sign.", 
-      sound: "aquarius.mp3", 
+      sound: "assets/audio/audio2.mp3", 
       image: "assets/images/zatanna.webp" 
     },
     
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "Black Canary (Dinah Laurel Lance)",
       dates: "February 19 - March 20", 
       description: "Intuitive, artistic, and compassionate. Pisces are deeply connected to emotions and creativity, and Black Canary, as both a musician and a fighter, embodies this perfectly. She’s also very empathetic, always standing up for those in need.", 
-      sound: "pisces.mp3", 
+      sound: "assets/audio/audio3.mp3", 
       image: "assets/images/black_canary.png" 
     },
     
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "Hawkgirl (Shayera Hol)",
       dates: "March 21 - April 19", 
       description: "Brave, impulsive, and action-oriented. Aries are warriors at heart, just like Hawkgirl, who never backs down from a fight. She’s aggressive when necessary but also passionate about her beliefs.", 
-      sound: "aries.mp3", 
+      sound: "assets/audio/audio4.mp3", 
       image: "assets/images/hawkgirl.webp" 
     },
     
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "Wonder Woman (Diana Prince)",
       dates: "April 20 - May 20", 
       description: "Loyal, patient, and strong-willed. Taurus individuals are known for their reliability and perseverance, which makes Wonder Woman a great match. She has unshakable morals and is always there for her allies, embodying the Taurus spirit of endurance.", 
-      sound: "taurus.mp3", 
+      sound: "assets/audio/audio5.mp3", 
       image: "assets/images/wonder_woman.webp" 
     },
     
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "Spoiler (Stephanie Brown)",
       dates: "May 21 - June 21", 
       description: "Adaptable, witty, and spontaneous. Geminis are known for their dual nature and ability to think quickly, which matches Stephanie's journey as a vigilante. She’s talkative, resourceful, and able to roll with the punches, much like a true Gemini.", 
-      sound: "gemini.mp3", 
+      sound: "assets/audio/audio6.mp3", 
       image: "assets/images/spoiler.webp" 
     },
     
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "Black Bat (Cassandra Cain)",
       dates: "June 22 - July 22", 
       description: "Protective, deeply emotional, and intuitive. Cancers are known for their deep inner world and strong instincts, much like Cassandra, who barely speaks but understands people better than most. She’s fiercely loyal and driven by her emotions.", 
-      sound: "cancer.mp3", 
+      sound: "assets/audio/audio7.mp3", 
       image: "assets/images/black_bat.png" 
     },
     
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "Supergirl (Kara Zor-El)",
       dates: "July 23 - August 22", 
       description: "Bold, charismatic, and confident. Leos shine naturally, and Supergirl is a perfect example of this. She’s always in the spotlight, inspires others, and has a strong will to protect those she loves.", 
-      sound: "leo.mp3", 
+      sound: "assets/audio/audio8.mp3", 
       image: "assets/images/supergirl.png" 
     },
     
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "Batwoman (Kate Kane)",
       dates: "August 23 - September 22", 
       description: "Analytical, disciplined, and detail-oriented. Virgos are perfectionists who rely on logic, much like Batwoman, who approaches crime-fighting with precision and strategy. She’s deeply committed to justice and follows her own strict moral code.", 
-      sound: "virgo.mp3", 
+      sound: "assets/audio/audio9.mp3", 
       image: "assets/images/batwoman.webp" 
     },
     
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "Starfire",
       dates: "September 23 - October 23", 
       description: "Diplomatic, charismatic, and peace-loving. Libras value harmony and connection, just like Starfire, who seeks to unite people rather than fight. Her natural charm and love for companionship make her the perfect Libra.", 
-      sound: "libra.mp3", 
+      sound: "assets/audio/audio10.mp3", 
       image: "assets/images/starfire.webp" 
     },
     
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "Artemis Grace",
       dates: "October 24 - November 21", 
       description: "Passionate, intense, and determined. Scorpios are known for their emotional depth and loyalty. Artemis is fiercely independent but cares deeply about her loved ones. She hides her emotions under a tough exterior, just like a Scorpio.", 
-      sound: "scorpio.mp3", 
+      sound: "assets/audio/audio11.mp3", 
       image: "assets/images/artemis.png" 
     },
     
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "Wonder Girl (Donna Troy)",
       dates: "November 22 - December 21", 
       description: "Adventurous, philosophical, and always searching for meaning. Sagittarians are known for their restless spirit and desire to explore, much like Donna Troy, who has struggled with her identity and constantly seeks her place in the world.", 
-      sound: "sagittarius.mp3", 
+      sound: "assets/audio/audio12.mp3", 
       image: "assets/images/wonder_girl.webp" 
     }
   };
