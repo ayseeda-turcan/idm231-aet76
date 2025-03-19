@@ -135,14 +135,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const sign = getZodiac(month, day);
     if (sign) {
       resultDiv.innerHTML = `
-        <h2>${zodiacSigns[sign].name}</h2>  <!-- Display Character Name -->
+        <h2>${zodiacSigns[sign].name}</h2>  <!-- Character Name -->
         <img src="${zodiacSigns[sign].image}" alt="${zodiacSigns[sign].name}" class="zodiac-image">
         <p><strong>Dates:</strong> ${zodiacSigns[sign].dates}</p>
         <p>${zodiacSigns[sign].description}</p>
       `;
 
       // Play character’s sound effect
-      const audio = new Audio(`sounds/${zodiacSigns[sign].sound}`);
+      const audio = new Audio(`${zodiacSigns[sign].sound}`);
       audio.play();
     } else {
       resultDiv.innerHTML = "<p>Invalid date. Please try again.</p>";
@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
 
 
-      const audio = new Audio(`sounds/${zodiacSigns[sign].sound}`);
+      const audio = new Audio(`${zodiacSigns[sign].sound}`);
       audio.play();
     });
 
