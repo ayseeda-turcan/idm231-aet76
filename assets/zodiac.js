@@ -1,87 +1,99 @@
 document.addEventListener("DOMContentLoaded", () => {
   const zodiacSigns = {
     Capricorn: { 
+      name: "Batgirl (Barbara Gordon)",
       dates: "December 22 - January 19", 
-      description: "Disciplined and responsible.", 
+      description: "Intelligent, disciplined, and strategic. Capricorns are natural planners and hard workers, much like Barbara, who is both an exceptional detective and a highly skilled fighter. She embodies persistence and responsibility, especially in her role as Oracle.", 
       sound: "capricorn.mp3", 
-      image: "assets/images/thumb.jpg" 
+      image: "assets/images/batgirl.png" 
     },
     
     Aquarius: { 
+      name: "Zatanna Zatara",
       dates: "January 20 - February 18", 
-      description: "Innovative and independent.", 
+      description: "Independent, innovative, and deeply connected to knowledge. Aquarians are known for their uniqueness and ability to think outside the box. Zatanna’s magical abilities and her unconventional approach to solving problems make her a perfect fit for this sign.", 
       sound: "aquarius.mp3", 
-      image: "assets/images/thumb.jpg" 
+      image: "assets/images/zatanna.webp" 
     },
     
     Pisces: { 
+      name: "Black Canary (Dinah Laurel Lance)",
       dates: "February 19 - March 20", 
-      description: "Compassionate and intuitive.", 
+      description: "Intuitive, artistic, and compassionate. Pisces are deeply connected to emotions and creativity, and Black Canary, as both a musician and a fighter, embodies this perfectly. She’s also very empathetic, always standing up for those in need.", 
       sound: "pisces.mp3", 
-      image: "assets/images/thumb.jpg" 
+      image: "assets/images/black_canary.png" 
     },
     
     Aries: { 
+      name: "Hawkgirl (Shayera Hol)",
       dates: "March 21 - April 19", 
-      description: "Bold and ambitious.", 
+      description: "Brave, impulsive, and action-oriented. Aries are warriors at heart, just like Hawkgirl, who never backs down from a fight. She’s aggressive when necessary but also passionate about her beliefs.", 
       sound: "aries.mp3", 
-      image: "assets/images/thumb.jpg" 
+      image: "assets/images/hawkgirl.webp" 
     },
     
     Taurus: { 
+      name: "Wonder Woman (Diana Prince)",
       dates: "April 20 - May 20", 
-      description: "Reliable and practical.", 
+      description: "Loyal, patient, and strong-willed. Taurus individuals are known for their reliability and perseverance, which makes Wonder Woman a great match. She has unshakable morals and is always there for her allies, embodying the Taurus spirit of endurance.", 
       sound: "taurus.mp3", 
-      image: "assets/images/thumb.jpg" 
+      image: "assets/images/wonder_woman.webp" 
     },
     
     Gemini: { 
+      name: "Spoiler (Stephanie Brown)",
       dates: "May 21 - June 21", 
-      description: "Adaptable and outgoing.", 
+      description: "Adaptable, witty, and spontaneous. Geminis are known for their dual nature and ability to think quickly, which matches Stephanie's journey as a vigilante. She’s talkative, resourceful, and able to roll with the punches, much like a true Gemini.", 
       sound: "gemini.mp3", 
-      image: "assets/images/thumb.jpg" 
+      image: "assets/images/spoiler.webp" 
     },
     
     Cancer: { 
+      name: "Black Bat (Cassandra Cain)",
       dates: "June 22 - July 22", 
-      description: "Emotional and nurturing.", 
+      description: "Protective, deeply emotional, and intuitive. Cancers are known for their deep inner world and strong instincts, much like Cassandra, who barely speaks but understands people better than most. She’s fiercely loyal and driven by her emotions.", 
       sound: "cancer.mp3", 
-      image: "assets/images/thumb.jpg" 
+      image: "assets/images/black_bat.png" 
     },
     
     Leo: { 
+      name: "Supergirl (Kara Zor-El)",
       dates: "July 23 - August 22", 
-      description: "Confident and charismatic.", 
+      description: "Bold, charismatic, and confident. Leos shine naturally, and Supergirl is a perfect example of this. She’s always in the spotlight, inspires others, and has a strong will to protect those she loves.", 
       sound: "leo.mp3", 
-      image: "assets/images/thumb.jpg" 
+      image: "assets/images/supergirl.png" 
     },
     
     Virgo: { 
+      name: "Batwoman (Kate Kane)",
       dates: "August 23 - September 22", 
-      description: "Analytical and hardworking.", 
+      description: "Analytical, disciplined, and detail-oriented. Virgos are perfectionists who rely on logic, much like Batwoman, who approaches crime-fighting with precision and strategy. She’s deeply committed to justice and follows her own strict moral code.", 
       sound: "virgo.mp3", 
-      image: "assets/images/thumb.jpg" 
+      image: "assets/images/batwoman.webp" 
     },
     
     Libra: { 
+      name: "Starfire",
       dates: "September 23 - October 23", 
-      description: "Diplomatic and charming.", 
+      description: "Diplomatic, charismatic, and peace-loving. Libras value harmony and connection, just like Starfire, who seeks to unite people rather than fight. Her natural charm and love for companionship make her the perfect Libra.", 
       sound: "libra.mp3", 
-      image: "assets/images/thumb.jpg" 
+      image: "assets/images/starfire.webp" 
     },
     
     Scorpio: { 
+      name: "Artemis Grace",
       dates: "October 24 - November 21", 
-      description: "Passionate and resourceful.", 
+      description: "Passionate, intense, and determined. Scorpios are known for their emotional depth and loyalty. Artemis is fiercely independent but cares deeply about her loved ones. She hides her emotions under a tough exterior, just like a Scorpio.", 
       sound: "scorpio.mp3", 
-      image: "assets/images/thumb.jpg" 
+      image: "assets/images/artemis.png" 
     },
     
     Sagittarius: { 
+      name: "Wonder Girl (Donna Troy)",
       dates: "November 22 - December 21", 
-      description: "Adventurous and optimistic.", 
+      description: "Adventurous, philosophical, and always searching for meaning. Sagittarians are known for their restless spirit and desire to explore, much like Donna Troy, who has struggled with her identity and constantly seeks her place in the world.", 
       sound: "sagittarius.mp3", 
-      image: "assets/images/thumb.jpg" 
+      image: "assets/images/wonder_girl.webp" 
     }
   };
 
@@ -123,13 +135,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const sign = getZodiac(month, day);
     if (sign) {
       resultDiv.innerHTML = `
-        <h2>${sign}</h2>
-        <img src="${zodiacSigns[sign].image}" alt="${sign}" class="zodiac-image">
+        <h2>${zodiacSigns[sign].name}</h2>  <!-- Display Character Name -->
+        <img src="${zodiacSigns[sign].image}" alt="${zodiacSigns[sign].name}" class="zodiac-image">
         <p><strong>Dates:</strong> ${zodiacSigns[sign].dates}</p>
-        <p><strong>Description:</strong> ${zodiacSigns[sign].description}</p>
+        <p>${zodiacSigns[sign].description}</p>
       `;
 
-
+      // Play character’s sound effect
       const audio = new Audio(`sounds/${zodiacSigns[sign].sound}`);
       audio.play();
     } else {
@@ -138,23 +150,40 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
+
   Object.keys(zodiacSigns).forEach(sign => {
+    const container = document.createElement("div");
+    container.classList.add("character-container");
+
+
     const img = document.createElement("img");
     img.src = zodiacSigns[sign].image;
-    img.alt = sign;
+    img.alt = zodiacSigns[sign].name;
     img.classList.add("zodiac-button");
+
+
+    const nameLabel = document.createElement("p");
+    nameLabel.textContent = zodiacSigns[sign].name;
+    nameLabel.classList.add("character-name");
+
+    
     img.addEventListener("click", () => {
       resultDiv.innerHTML = `
-        <h2>${sign}</h2>
-        <img src="${zodiacSigns[sign].image}" alt="${sign}" class="zodiac-image">
+        <h2>${zodiacSigns[sign].name}</h2>  <!-- Display Character Name -->
+        <img src="${zodiacSigns[sign].image}" alt="${zodiacSigns[sign].name}" class="zodiac-image">
         <p><strong>Dates:</strong> ${zodiacSigns[sign].dates}</p>
-        <p><strong>Description:</strong> ${zodiacSigns[sign].description}</p>
+        <p>${zodiacSigns[sign].description}</p>
       `;
+
+
       const audio = new Audio(`sounds/${zodiacSigns[sign].sound}`);
       audio.play();
     });
-    signList.appendChild(img);
+
+    container.appendChild(img);
+    signList.appendChild(container);
   });
+
 
 
   // HELP
@@ -163,24 +192,25 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.getElementById("submit-button").addEventListener("click", displayZodiac);
-});
 
-var modal = document.getElementById("myModal");
+  var modal = document.getElementById("myModal");
 
-var btn = document.getElementById("myBtn");
+  var btn = document.getElementById("myBtn");
 
-var span = document.getElementsByClassName("close")[0];
+  var span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
 
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
+  span.onclick = function() {
     modal.style.display = "none";
   }
-}
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+});
+

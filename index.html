@@ -1,37 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zodiac Finder</title>
-    <script defer src="assets/zodiac.js"></script>
-    <link rel="stylesheet" href="assets/style.css">
-</head>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zodiac Finder</title>
+        <script defer src="assets/zodiac.js"></script>
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
 
-<body>
-    <h1>Zodiac Finder</h1>
-    <label for="birthdate">Enter your birth date:</label>
-    <input type="date" id="birthdate">
-    <button id="submit-button">Find My Zodiac</button>
-    <div id="result"></div>
+    <body>
+
+        <button id="myBtn">
+            <span>?</span>
+            <svg aria-hidden><circle></circle></svg>
+        </button>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>1. Enter your birth date to find your zodiac sign.</p>
+                <p>2. Click "Find My DC Hero" and see your results!</p>
+                <p>3. Click on any zodiac sign to see its details and hear its unique sound. </p>
+            </div>
+
+        </div>
+        
+        <h1>Who is Your DC Hero Based on Your Zodiac Sign?</h1>
+        <label for="birthdate">Enter your birth date:</label>
+        <input type="date" id="birthdate">
+        <button id="submit-button">Find My DC Hero</button>
+        <div id="result"></div>
     
-    <h2>Select a Zodiac Sign:</h2>
-    <div id="sign-list"></div>
+        <h2>Select a Character:</h2>
+        <div id="sign-list"></div>
 
-    <button id="myBtn">
-        <span>?</span>
-        <svg aria-hidden><circle></circle></svg>
-    </button>
 
-    <div id="myModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>1. Enter your birth date to find your zodiac sign.</p>
-        <p>2. Click "Find My Zodiac" and see your results!</p>
-        <p>3. Click on any zodiac sign to see its details and hear its unique sound. </p>
-  </div>
 
-</div>
-
-</body>
+    </body>
 </html>
