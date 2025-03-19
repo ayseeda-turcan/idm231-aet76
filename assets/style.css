@@ -8,6 +8,35 @@ body {
   padding: 25px 100px;
 }
 
+
+/*https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate3*/
+#submit-button {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 500;
+  display: inline-block;
+  padding: 10px 15px;
+  margin-left: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  color: #d8d8d8;
+  background-color: rgb(49, 103, 168);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px #999;
+}
+
+#submit-button:hover {
+  background-color: rgb(36, 79, 131);
+}
+
+#submit-button:active {
+  background-color: rgb(49, 103, 168);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/*               */
+
 #sign-list {
   display: flex;
   flex-wrap: wrap;
@@ -72,7 +101,6 @@ h2 {
 
 
 /*https://ui-buttons.web.app/circular-charge*/
-
 #myBtn,
 #myBtn *,
 #myBtn :after,
@@ -162,3 +190,4 @@ h2 {
   stroke-dashoffset: 120;
   transition: stroke-dashoffset 1s ease-in-out;
 }
+/*               */
