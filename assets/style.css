@@ -37,12 +37,14 @@ body {
 }
 /*               */
 
+/* center zodiac buttons*/
 #sign-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+/* button size and style */
 .zodiac-button {
   width: 150px;
   height: 150px;
@@ -55,13 +57,14 @@ h2 {
   margin-top: 50px;
 }
 
+/* the result image */
 .zodiac-image {
   width: 200px;
   height: 200px;
   margin: 10px 0;
 }
 
-
+/* modal dimensions and background */
 .modal {
   display: none;
   position: fixed;

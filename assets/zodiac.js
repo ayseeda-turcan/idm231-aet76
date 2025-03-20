@@ -1,3 +1,4 @@
+// Wait until the full HTML document is loaded before executing the script
 document.addEventListener("DOMContentLoaded", () => {
   const zodiacSigns = {
     Capricorn: { 
@@ -115,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return null;
   }
 
-
+  // Get references to HTML elements
   const birthdateInput = document.getElementById("birthdate");
 
   const resultDiv = document.getElementById("result");
@@ -127,6 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const helpButton = document.getElementById("myBtn");
 
 
+  // Function to display the character based on user input
   function displayZodiac() {
     const date = new Date(birthdateInput.value);
     const month = date.getMonth() + 1;
@@ -151,6 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+  // clickable zodiac character images 
   Object.keys(zodiacSigns).forEach(sign => {
     const container = document.createElement("div");
     container.classList.add("character-container");
@@ -203,10 +206,14 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.style.display = "block";
   }
 
+  
+  // Close modal when 'X' is clicked
   span.onclick = function() {
     modal.style.display = "none";
   }
 
+
+  // close modal when clicking outside of it
   window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
